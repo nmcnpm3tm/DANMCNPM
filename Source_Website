@@ -1,12 +1,169 @@
 Nguồn Website về IT Conference:
 
 https://www.allconferencealert.com/information-technology.html
+  https://www.allconferencealert.com/robots.txt
+    User-agent: *
+    Disallow: /mobile*
+    Disallow: /cgi-bin/
+    Sitemap: https://www.allconferencealert.com/sitemap.xml
 
 https://conferencealerts.com/topic-listing?topic=Information%20Technology
+  https://conferencealerts.com/robots.txt => Không tồn tại
 
 https://conferencemonkey.org/search?itsoftwareengineering=itsoftwareengineering
-
+  https://conferencemonkey.org/robots.txt
+  {   
+        User-agent: *
+        # CSS, JS, Images
+        Allow: /core/*.css$
+        Allow: /core/*.css?
+        Allow: /core/*.js$
+        Allow: /core/*.js?
+        Allow: /core/*.gif
+        Allow: /core/*.jpg
+        Allow: /core/*.jpeg
+        Allow: /core/*.png
+        Allow: /core/*.svg
+        Allow: /profiles/*.css$
+        Allow: /profiles/*.css?
+        Allow: /profiles/*.js$
+        Allow: /profiles/*.js?
+        Allow: /profiles/*.gif
+        Allow: /profiles/*.jpg
+        Allow: /profiles/*.jpeg
+        Allow: /profiles/*.png
+        Allow: /profiles/*.svg
+        # Directories
+        Disallow: /core/
+        Disallow: /profiles/
+        # Files
+        Disallow: /README.txt
+        Disallow: /web.config
+        # Paths (clean URLs)
+        Disallow: /admin/
+        Disallow: /comment/reply/
+        Disallow: /filter/tips
+        Disallow: /node/add/
+        Disallow: /search/
+        Disallow: /user/register/
+        Disallow: /user/password/
+        Disallow: /user/login/
+        Disallow: /user/logout/
+        # Paths (no clean URLs)
+        Disallow: /index.php/admin/
+        Disallow: /index.php/comment/reply/
+        Disallow: /index.php/filter/tips
+        Disallow: /index.php/node/add/
+        Disallow: /index.php/search/
+        Disallow: /index.php/user/password/
+        Disallow: /index.php/user/register/
+        Disallow: /index.php/user/login/
+        Disallow: /index.php/user/logout/
+        
+        User-agent: SemrushBot*
+        Crawl-delay: 10
+        
+        User-agent: Applebot
+        Crawl-delay: 10
+        
+        User-agent: Bingbot
+        Crawl-delay: 10
+        
+        User-agent: AhrefsBot
+        Crawl-delay: 10
+        
+        User-agent: Alexabot
+        Crawl-delay: 10
+        
+        User-agent: PetalBot
+        Crawl-delay: 10
+        
+        User-agent: MJ12bot
+        Crawl-delay: 10
+        
+        User-agent: YandexBot
+        Crawl-delay: 10
+        
+        User-agent: MojeekBot
+        Crawl-delay: 10
+        
+        User-agent: Jooblebot
+        Crawl-delay: 10
+        
+        User-agent: YaK
+        Crawl-delay: 10
+        
+        User-agent: SeznamBot
+        Crawl-delay: 10
+        
+        User-agent: Mail.RU_Bot
+        Crawl-delay: 10
+        
+        User-agent: Pinterestbot
+        Crawl-delay: 10
+        
+        User-agent: laboraybot
+        Crawl-delay: 10
+        
+        User-agent: Amazonbot
+        Crawl-delay: 10
+        
+        User-agent: Bytespider
+        Crawl-delay: 10
+        
+        User-agent: DotBot
+        Crawl-delay: 10
+        
+        User-agent: Linespider
+        Crawl-delay: 10
+        
+        User-agent: Baiduspider
+        Crawl-delay: 10
+        
+        User-agent: VelenPublicWebCrawler
+        Crawl-delay: 10
+        
+        User-agent: DuckDuckGo
+        Crawl-delay: 10
+        
+        User-agent: coccocbot
+        Crawl-delay: 10
+        
+        User-agent: AwarioBot
+        Crawl-delay: 10
+  }
+    
 https://10times.com/events?kw=it+technology+conferences
+  https://10times.com/robots.txt
+    {
+      User-agent: *
+      Disallow: /cgi/
+      Disallow: /rss-feeds/
+      Disallow: /xml_feeds/
+      Disallow: /includes/
+      Disallow: /search/
+      Disallow: /search?q=*
+      Disallow: /json/ 
+      Disallow: /dashboard/
+      Disallow: /servicequery
+      Disallow: /organiserenquiry
+      Disallow: /notificationlisting
+      Disallow: /notificationdetail
+      Disallow: /ajax*?*
+      Disallow: /*?*ajax
+      Disallow: /visitorregister*
+      Disallow: /registeruser
+      Disallow: /venues/search
+      Disallow: /*/stall-book
+      Disallow: /gold-premium$
+      Disallow: /*?*kw=*
+      Disallow: /sharesocial/*
+    }
 
 https://www.clocate.com/conferences-on+information-technology-it/c3UtNDc2/
+  https://www.clocate.com/robots.txt
+    {
+      User-agent: *
+      Allow: /
+      Disallow: /cgi-sys/*
 
