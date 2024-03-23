@@ -1,0 +1,111 @@
+A.	LẬP KẾ HOẠCH VÀ THIẾT KẾ HỆ THỐNG
+1.	Nghiên cứu và xác định nguồn dữ liệu
+1.1.	Tìm hiểu về các trang web cung cấp thông tin về hội nghị công nghệ thông tin trên thế giới
++ 
+
+1.2.	Xác định các trang web phù hợp (tên hội nghị, mốc thời gian, địa điểm, chủ đề, danh sách diễn giả, v.v.)
++ 
+
+2.	Thiết kế cơ sở dữ liệu
+2.1.	Xác định cấu trúc cơ sở dữ liệu để lưu trữ thông tin thu thập được
++ 
+2.2.	Xác định các bảng và mối quan hệ giữa chúng để đảm bảo dữ liệu được tổ chức một cách cấu trúc và dễ quản lý.
++ 
+2.3.	Lập kế hoạch cho quy trình lưu trữ dữ liệu và cách tổ chức thông tin để dễ dàng truy xuất và xử lý sau.
++ 
+
+3.	Chuẩn bị tài liệu mô tả kế hoạch và thiết kế
+3.1.	Mô tả chi tiết về Kế hoạch Thu thập Thông tin và  Thiết kế CSDL cho IT CRAWLER
+3.1.1.	Giới thiệu
+Tài liệu này mô tả kế hoạch thu thập thông tin và thiết kế cơ sở dữ liệu cho dự án IT Conferences Crawler. Dự án này nhằm mục đích tự động thu thập thông tin về các hội nghị trong lĩnh vực công nghệ thông tin trên toàn thế giới. Quy trình này sẽ bao gồm việc thu thập thông tin từ các trang web và tổ chức thông tin này vào một cơ sở dữ liệu có cấu trúc.
+3.1.2.	Kế hoạch Thu thập Thông tin
+3.1.2.1.	Xác định nguồn dữ liệu: 
+Đầu tiên, chúng ta sẽ xác định các nguồn dữ liệu cần thu thập thông tin về các hội nghị. Các nguồn có thể bao gồm các trang web chính thống của các tổ chức tổ chức hội nghị, các diễn đàn, cơ sở dữ liệu hội nghị, và các trang web chia sẻ thông tin về hội nghị.
+3.1.2.2.	Lập kế hoạch Crawler: 
+Phát triển và triển khai một chương trình hoặc script có khả năng tự động điều hướng các trang web, tìm kiếm thông tin về các hội nghị, và trích xuất dữ liệu từ các trang web này. Sử dụng các công cụ BeautifulSoup trong Python có thể được cân nhắc.
+3.1.2.3.	Xử lý và lọc dữ liệu: 
+Sau khi thu thập, dữ liệu sẽ được xử lý và lọc để loại bỏ dữ liệu không cần thiết và đảm bảo độ chính xác của dữ liệu. Các bước này có thể bao gồm loại bỏ thông tin trùng lặp, chuẩn hóa dữ liệu, và xử lý dữ liệu không đầy đủ hoặc không hợp lệ.
+3.1.2.4.	Lưu trữ dữ liệu: 
+Cuối cùng, dữ liệu được thu thập sẽ được lưu trữ trong cơ sở dữ liệu để có thể sử dụng sau này. Cơ sở dữ liệu sẽ được thiết kế để phản ánh cấu trúc của dữ liệu thu thập, giúp dễ dàng truy xuất và xử lý dữ liệu.
+3.1.3.	Thiết kế Cơ sở dữ liệu
+3.1.3.1.	Xác định yêu cầu: 
+Trước hết, chúng ta sẽ xác định yêu cầu về dữ liệu mà cơ sở dữ liệu cần lưu trữ. Điều này bao gồm việc xác định các thực thể chính và mối quan hệ giữa chúng.
+3.1.3.2.	Thiết kế cấu trúc cơ sở dữ liệu: 
+Dựa trên yêu cầu, chúng ta sẽ thiết kế cấu trúc cơ sở dữ liệu. Điều này bao gồm việc xác định các bảng, trường, khóa chính và mối quan hệ giữa các bảng.
+3.1.3.3.	Quản lý dữ liệu và ràng buộc: 
+Sau đó, chúng ta sẽ xác định các quy tắc và ràng buộc để đảm bảo tính nhất quán và tính hợp lý của dữ liệu. Điều này có thể bao gồm việc xác định các ràng buộc duy nhất, ràng buộc ngoại tuyến và các quy tắc kiểm tra dữ liệu.
+3.1.3.4.	Tối ưu hóa hiệu suất: 
+Cuối cùng, chúng ta sẽ tối ưu hóa cơ sở dữ liệu để đảm bảo hiệu suất tốt nhất khi truy xuất và xử lý dữ liệu. Điều này bao gồm việc tạo chỉ mục, tối ưu hóa truy vấn và sử dụng các kỹ thuật khác để cải thiện hiệu suất của cơ sở dữ liệu.
+ 3.1.4.	Kế hoạch Triển khai và Kiểm tra
+3.1.4.1.	Triển khai Crawler: 
+Triển khai và chạy chương trình hoặc script crawler để thu thập thông tin về các hội nghị từ các nguồn dữ liệu được xác định.
+3.1.4.2.	Kiểm tra và Đánh giá: 
+Tiến hành kiểm tra và đánh giá dữ liệu thu thập được để đảm bảo tính chính xác và độ tin cậy của thông tin.
+3.1.4.3.	Điều chỉnh và Cải thiện: 
+Dựa trên kết quả kiểm tra và đánh giá, điều chỉnh và cải thiện quy trình thu thập thông tin và thiết kế cơ sở dữ liệu nếu cần thiết.
+Trên đây là một tài liệu mô tả chi tiết về kế hoạch thu thập thông tin và thiết kế cơ sở dữ liệu cho dự án IT Conferences Crawler. Tài liệu này giúp đảm bảo rằng quy trình thu thập thông tin và cơ sở dữ liệu được thiết kế một cách cấu trúc và dễ quản lý.
+ 
+3.2.	Hướng dẫn sử dụng CSDL và các chuẩn mực cho việc thu thập thông tin và web hiệu quả và hợp pháp
+Để sử dụng cơ sở dữ liệu (CSDL) và thu thập thông tin từ web một cách hiệu quả và hợp pháp, dưới đây là một số hướng dẫn và chuẩn mực bạn nên tuân thủ:
+3.2.1.	Tuân thủ luật bản quyền và chính sách của trang web:
+Trước khi thu thập thông tin từ một trang web, hãy đảm bảo bạn hiểu rõ và tuân thủ các quy định về bản quyền và chính sách riêng của trang web đó.
+Kiểm tra xem trang web có cung cấp API hoặc các phương tiện khác để thu thập thông tin một cách hợp pháp không.
+3.2.2.	Sử dụng robots.txt:
+Kiểm tra file robots.txt của trang web để biết xem trang web có hạn chế việc thu thập thông tin bằng cách sử dụng robots.txt hay không.
+Tuân thủ các chỉ dẫn trong robots.txt để đảm bảo việc thu thập thông tin được thực hiện một cách hợp pháp.
+3.2.3.	Sử dụng User-Agent đúng cách:
+Sử dụng User-Agent hợp pháp và không làm ảnh hưởng đến hoạt động của trang web hoặc các người dùng khác.
+Tránh việc giả mạo hoặc thay đổi User-Agent một cách không đúng cách.
+3.2.4.	Giới hạn tốc độ thu thập:
+Đảm bảo rằng tốc độ thu thập thông tin từ trang web được giới hạn để tránh gây tắc nghẽn hoặc quá tải cho máy chủ của trang web.
+Tuân thủ các hạn chế về tốc độ truy cập được nêu trong robots.txt hoặc các chính sách khác của trang web.
+3.2.5.	Xử lý dữ liệu một cách cẩn thận và chính xác:
+Đảm bảo rằng dữ liệu thu thập được được xử lý một cách cẩn thận và chính xác để tránh thông tin sai lệch hoặc không chính xác.
+Sử dụng các kỹ thuật phân tích dữ liệu và lọc dữ liệu để loại bỏ thông tin không cần thiết và chỉ giữ lại thông tin có giá trị.
+3.2.6.	Bảo vệ thông tin cá nhân:
+Tuân thủ các quy định về bảo vệ thông tin cá nhân của người dùng khi thu thập và xử lý thông tin từ web.
+Đảm bảo rằng dữ liệu cá nhân được bảo vệ và không được sử dụng một cách sai lạc hoặc không đúng mục đích.
+3.2.7.	Kiểm tra và đánh giá định kỳ:
+Thực hiện kiểm tra và đánh giá định kỳ về quy trình thu thập thông tin và sử dụng CSDL để đảm bảo tính hiệu quả và hợp pháp của hoạt động.
+Bằng việc tuân thủ các hướng dẫn và chuẩn mực trên, bạn có thể thu thập thông tin từ web một cách hiệu quả và hợp pháp, đồng thời đảm bảo tính chính xác và đáng tin cậy của dữ liệu.
+
+4.	Xây dựng mô hình hệ thống
+4.1.	Vẽ mô hình hoặc sơ đồ minh họa về cách hệ thống hoạt động (quy trình thu thập dữ liệu, lưu trữ và xử lý dữ liệu).
+4.1.1.	Quy trình thu thập dữ liệu
+4.1.1.1.	Sơ đồ quy trình thu thập dữ liệu
+4.1.1.2.	Mô tả sơ đồ
+
+4.1.2.	Quy trình lưu trữ dữ liệu
+4.1.2.1.	Sơ đồ quy trình thu thập dữ liệu
+4.1.2.2.	Mô tả sơ đồ
+
+4.1.3.	Quy trình xử lý dữ liệu
+4.1.3.1.	Sơ đồ quy trình xử lý
+4.1.3.2.	Mô tả sơ đồ
+
+4.2.	Mô tả cách tương tác và làm việc của các thành phần trong hệ thống để đạt mục tiêu thu thập dữ liệu.
+Các thành phần trong hệ thống tương tác và làm việc với nhau để đạt được mục tiêu thu thập dữ liệu của dự án IT Conferences Crawler. Dưới đây là mô tả về cách tương tác và làm việc của các thành phần này:
+4.2.1.	Thu thập dữ liệu (Crawler):
+Crawler là thành phần chịu trách nhiệm thu thập thông tin từ các trang web về hội nghị công nghệ.
+Nó hoạt động bằng cách điều hướng qua các trang web được xác định trước, tìm kiếm và trích xuất thông tin về các hội nghị.
+Crawler sử dụng các thư viện và công cụ như Scrapy hoặc BeautifulSoup để thực hiện nhiệm vụ này.
+4.2.2.	Xử lý dữ liệu:
+Data Processing là quá trình xử lý dữ liệu thu thập được từ Crawler để loại bỏ thông tin không cần thiết và đảm bảo tính chính xác của dữ liệu.
+Các quy trình xử lý dữ liệu bao gồm lọc dữ liệu, chuẩn hóa dữ liệu và xử lý các trường hợp đặc biệt.
+4.2.3.	Cơ sở dữ liệu:
+Cơ sở dữ liệu là nơi lưu trữ dữ liệu thu thập được từ Crawler sau khi đã được xử lý.
+Nó cung cấp một giao diện để lưu trữ và truy xuất dữ liệu một cách hiệu quả.
+Các truy vấn và thao tác được thực hiện thông qua cơ sở dữ liệu để lưu trữ và truy xuất thông tin.
+4.2.4.	Phân tích và truy xuất dữ liệu:
+Thành phần này cung cấp giao diện hoặc API cho người dùng để truy xuất và hiển thị thông tin về các hội nghị đã thu thập được.
+Nó có thể cung cấp các tính năng phân tích dữ liệu như thống kê, tổng hợp và lọc dữ liệu theo yêu cầu của người dùng.
+4.2.5.	Giao diện người dùng:
+Nếu có, giao diện người dùng cung cấp một cách tiện lợi cho người dùng để tương tác với dữ liệu thu thập được.
+Người dùng có thể tìm kiếm, duyệt thông tin và tương tác với các tính năng khác thông qua giao diện người dùng này.
+
+B.	PHÁT TRIỂN CRAWLER (SCRIPT)
+ 
+C.	XỬ LÝ VÀ LỌC THÔNG TIN ĐỂ LOẠI BỎ DỮ LIỆU KHÔNG CẦN THIẾT
+ 
+D.	LƯU DỮ LIỆU VÀ TÍCH HỢP GIAO DIỆN NGƯỜI DÙNG
+
